@@ -140,7 +140,7 @@ get_uid <- function(sciname, ask = TRUE, verbose = TRUE, rows = NA){
         message("\nMore than one UID found for taxon '", sciname, "'!\n
             Enter rownumber of taxon (other inputs will return 'NA'):\n")
         print(df)
-        take <- scan(n = 1, quiet = TRUE, what = 'raw')
+        take <- NA #scan(n = 1, quiet = TRUE, what = 'raw')
 
         if(length(take) == 0){
           take <- 'notake'
